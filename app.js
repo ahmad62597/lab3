@@ -4,6 +4,7 @@ var result = 0
 alert('Welcome to my website. How well do you know me?');
 
 //Question one in regards to place of birth
+function firstQuestion() {
 console.log('variable for questionOne is undefined, waiting for input', questionOne)
 var questionOne = prompt('Was I born in the United States? Please answer with Yes/Y/No/N.').toUpperCase();
 console.log('Input by user should be variable', questionOne)
@@ -15,6 +16,9 @@ if (questionOne === 'YES' || questionOne === 'Y') {
 } else {
     alert('Please answer with Yes, Y, or No, N next time.')
 }
+}
+firstQuestion();
+console.log('result', result);
 
 
 //Question two in regards to ice cream
