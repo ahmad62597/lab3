@@ -57,17 +57,21 @@ thirdQuestion();
 console.log('result', result);
 
 //Question four in regards to coffee
-console.log('variable for questionTwo is undefined, waiting for input', questionFour)
-var questionFour = prompt('Do I enjoy the aroma and taste of coffe? Please answer with Yes/Y/No/N.').toUpperCase();
-console.log('Input by user should be variable', questionTwo)
-if (questionFour === 'YES' || questionFour === 'Y') {
-    alert('Oh no! That is wrong! Better luck next time!')
-} else if (questionFour === 'NO' || questionFour === 'N') {
-    alert('Wow! You know me so well!')
-    result++;
-} else {
-    alert('Please answer with Yes, Y, or No, N next time.')
+function fourthQuestion(){
+	console.log('variable for questionTwo is undefined, waiting for input', questionFour)
+	var questionFour = prompt('Do I enjoy the aroma and taste of coffe? Please answer with Yes/Y/No/N.').toUpperCase();
+	console.log('Input by user should be variable', questionTwo)
+	if (questionFour === 'YES' || questionFour === 'Y') {
+			alert('Oh no! That is wrong! Better luck next time!')
+	} else if (questionFour === 'NO' || questionFour === 'N') {
+			alert('Wow! You know me so well!')
+			result++;
+	} else {
+			alert('Please answer with Yes, Y, or No, N next time.')
+	}
 }
+fourthQuestion();
+console.log('result', result);
 
 //Question five in regards to travelling
 console.log('variable for questionTwo is undefined, waiting for input', questionFour)
