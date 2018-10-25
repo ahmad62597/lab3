@@ -74,17 +74,21 @@ fourthQuestion();
 console.log('result', result);
 
 //Question five in regards to travelling
-console.log('variable for questionTwo is undefined, waiting for input', questionFour)
-var questionFive = prompt('Have I ever been to Chicago? Please answer with Yes/Y/No/N.').toUpperCase();
-console.log('Input by user should be variable', questionFive)
-if (questionFive === 'YES' || questionFive === 'Y') {
-    alert('Oh no! That is wrong! Better luck next time!')
-} else if (questionFive === 'NO' || questionFive === 'N') {
-    alert('Wow! You know me so well!')
-    result++;
-} else {
-    alert('Please answer with Yes, Y, or No, N next time.')
+function fifthQuestion(){
+	console.log('variable for questionTwo is undefined, waiting for input', questionFour)
+	var questionFive = prompt('Have I ever been to Chicago? Please answer with Yes/Y/No/N.').toUpperCase();
+	console.log('Input by user should be variable', questionFive)
+	if (questionFive === 'YES' || questionFive === 'Y') {
+			alert('Oh no! That is wrong! Better luck next time!')
+	} else if (questionFive === 'NO' || questionFive === 'N') {
+			alert('Wow! You know me so well!')
+			result++;
+	} else {
+			alert('Please answer with Yes, Y, or No, N next time.')
+	}
 }
+fifthQuestion();
+console.log('result', result);
 
 //Question six. Guessing game for number with only 4 tries 
 
