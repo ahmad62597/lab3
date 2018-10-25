@@ -119,14 +119,18 @@ sixthQuestion();
 console.log('results', result);
 
 //Question seven. Create array for guessing which states I have visited. Six tries.
-var states = ['WASHINGTON', 'IDAHO', 'CALIFORNIA', 'ILLINOIS', 'NEW JERSEY', 'TEXAS, ARKANSAS', 'NEW MEXICO']; 
-var stateGuesses = (prompt('Can you guess which states I have visited?').toUpperCase) 
+function seventhQuestion(){
+	var states = ['WASHINGTON', 'IDAHO', 'CALIFORNIA', 'ILLINOIS', 'NEW JERSEY', 'TEXAS, ARKANSAS', 'NEW MEXICO']; 
+	var stateGuesses = (prompt('Can you guess which states I have visited?').toUpperCase) 
 
 
-var guessesForStates = 0;
-while (stateGuesses !== states && counter < 5) {
+	var guessesForStates = 0;
+	while (stateGuesses !== states && counter < 5) {
 
+	}
 }
+seventhQuestion();
+console.log('result', result);
 
 
 
