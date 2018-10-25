@@ -149,14 +149,28 @@ function seventhQuestion() {
     'CALIFORNIA',
     'ILLINOIS',
     'NEW JERSEY',
-    'TEXAS, ARKANSAS',
+    'TEXAS',
+    'ARKANSAS',
     'NEW MEXICO'
   ];
   var stateGuesses = prompt('Can you guess which states I have visited?')
     .toUpperCase;
-
+  var isThisCorrect = false;
   var guessesForStates = 0;
-  while (stateGuesses !== states && counter < 5) {}
+  while (isThisCorrect === false && guessesForStates < 5) {
+    for (var i = 0; i < states.length; i++)
+      if (states[i] === stateGuesses) {
+        isThisCorrect = true;
+      }
+    if (isThisCorrect === false) {
+      stateGuesses = prompt('Guess Again!').toUpperCase;
+      guessesForStates++;
+    }
+  }
+  if (isThisCorrect === true) {
+    alert('Yay! You got it!');
+    result++;
+  }
 }
 seventhQuestion();
 console.log('result', result);
