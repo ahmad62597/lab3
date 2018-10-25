@@ -72,13 +72,13 @@ console.log('result', result);
 //Question four in regards to coffee
 function fourthQuestion() {
   console.log(
-    'variable for questionTwo is undefined, waiting for input',
+    'variable for questionFour is undefined, waiting for input',
     questionFour
   );
   var questionFour = prompt(
     'Do I enjoy the aroma and taste of coffe? Please answer with Yes/Y/No/N.'
   ).toUpperCase();
-  console.log('Input by user should be variable', questionTwo);
+  console.log('Input by user should be variable', questionFour);
   if (questionFour === 'YES' || questionFour === 'Y') {
     alert('Oh no! That is wrong! Better luck next time!');
   } else if (questionFour === 'NO' || questionFour === 'N') {
@@ -95,7 +95,7 @@ console.log('result', result);
 function fifthQuestion() {
   console.log(
     'variable for questionTwo is undefined, waiting for input',
-    questionFour
+    questionFive
   );
   var questionFive = prompt(
     'Have I ever been to Chicago? Please answer with Yes/Y/No/N.'
@@ -126,6 +126,8 @@ function sixthQuestion() {
     } else if (numberGuess < 42) {
       numberGuess = parseInt(prompt('Youre guess is too low. Try again.'));
       counter++;
+    } else {
+      numberGuess = parseInt(prompt('Please pick a numerical value'));
     }
   }
 
