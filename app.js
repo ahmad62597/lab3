@@ -91,29 +91,32 @@ fifthQuestion();
 console.log('result', result);
 
 //Question six. Guessing game for number with only 4 tries 
+function sixthQuestion(){
+	var numberGuess = parseInt(prompt('Guess a number I am thinking of between 1 and 100'))
+	var counter = 0;
+	while (numberGuess !== 42 && counter < 3) {
 
-var numberGuess = parseInt(prompt('Guess a number I am thinking of between 1 and 100'))
-var counter = 0;
-while (numberGuess !== 42 && counter < 3) {
+			if (numberGuess > 42) {
+					numberGuess = parseInt(prompt('Your guess is too high. Try again.'))
+					counter++;
+			}
+			else if (numberGuess < 42) {
 
-    if (numberGuess > 42) {
-        numberGuess = parseInt(prompt('Your guess is too high. Try again.'))
-        counter++;
-    }
-    else if (numberGuess < 42) {
+					numberGuess = parseInt(prompt('Youre guess is too low. Try again.'))
+					counter++;
 
-        numberGuess = parseInt(prompt('Youre guess is too low. Try again.'))
-        counter++;
+			}
+	}
 
-    }
+	if (numberGuess === 42) {
+			alert('Congratulations! You got it!')
+			result++;
+	} else {
+			alert('Too bad! You are out of tries!')
+	}
 }
-
-if (numberGuess === 42) {
-    alert('Congratulations! You got it!')
-    result++;
-} else {
-    alert('Too bad! You are out of tries!')
-}
+sixthQuestion();
+console.log('results', result);
 
 //Question seven. Create array for guessing which states I have visited. Six tries.
 var states = ['WASHINGTON', 'IDAHO', 'CALIFORNIA', 'ILLINOIS', 'NEW JERSEY', 'TEXAS, ARKANSAS', 'NEW MEXICO']; 
