@@ -22,6 +22,7 @@ console.log('result', result);
 
 
 //Question two in regards to ice cream
+function secondQuestion() {
 console.log('variable for questionTwo is undefined, waiting for input', questionTwo)
 var questionTwo = prompt('Do I like vanilla ice cream? Please answer with Yes/Y/No/N.').toUpperCase();
 console.log('Input by user should be variable', questionTwo)
@@ -33,6 +34,9 @@ if (questionTwo === 'YES' || questionTwo === 'Y') {
 } else {
     alert('Please answer with Yes, Y, or No, N next time.')
 }
+}
+secondQuestion();
+console.log('result', result);
 
 
 //Question three in regards to cats
