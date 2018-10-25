@@ -5,17 +5,17 @@ alert('Welcome to my website. How well do you know me?');
 
 //Question one in regards to place of birth
 function firstQuestion() {
-console.log('variable for questionOne is undefined, waiting for input', questionOne)
-var questionOne = prompt('Was I born in the United States? Please answer with Yes/Y/No/N.').toUpperCase();
-console.log('Input by user should be variable', questionOne)
-if (questionOne === 'YES' || questionOne === 'Y') {
-    alert('Oh no! That is wrong! Better luck next time!')
-} else if (questionOne === 'NO' || questionOne === 'N') {
-    alert('Wow! You know me so well!')
-    result++;
-} else {
-    alert('Please answer with Yes, Y, or No, N next time.')
-}
+	console.log('variable for questionOne is undefined, waiting for input', questionOne)
+	var questionOne = prompt('Was I born in the United States? Please answer with Yes/Y/No/N.').toUpperCase();
+	console.log('Input by user should be variable', questionOne)
+	if (questionOne === 'YES' || questionOne === 'Y') {
+			alert('Oh no! That is wrong! Better luck next time!')
+	} else if (questionOne === 'NO' || questionOne === 'N') {
+			alert('Wow! You know me so well!')
+			result++;
+	} else {
+			alert('Please answer with Yes, Y, or No, N next time.')
+	}
 }
 firstQuestion();
 console.log('result', result);
@@ -23,35 +23,38 @@ console.log('result', result);
 
 //Question two in regards to ice cream
 function secondQuestion() {
-console.log('variable for questionTwo is undefined, waiting for input', questionTwo)
-var questionTwo = prompt('Do I like vanilla ice cream? Please answer with Yes/Y/No/N.').toUpperCase();
-console.log('Input by user should be variable', questionTwo)
-if (questionTwo === 'YES' || questionTwo === 'Y') {
-    alert('Wow! You know me so well!')
-    result++;
-} else if (questionTwo === 'NO' || questionTwo === 'N') {
-    alert('Oh no! That is wrong! Better luck next time!')
-} else {
-    alert('Please answer with Yes, Y, or No, N next time.')
-}
+	console.log('variable for questionTwo is undefined, waiting for input', questionTwo)
+	var questionTwo = prompt('Do I like vanilla ice cream? Please answer with Yes/Y/No/N.').toUpperCase();
+	console.log('Input by user should be variable', questionTwo)
+	if (questionTwo === 'YES' || questionTwo === 'Y') {
+			alert('Wow! You know me so well!')
+			result++;
+	} else if (questionTwo === 'NO' || questionTwo === 'N') {
+			alert('Oh no! That is wrong! Better luck next time!')
+	} else {
+			alert('Please answer with Yes, Y, or No, N next time.')
+	}
 }
 secondQuestion();
 console.log('result', result);
 
 
 //Question three in regards to cats
-console.log('variable for questionTwo is undefined, waiting for input', questionThree)
-var questionThree = prompt('Do I like cats? Please answer with Yes/Y/No/N.').toUpperCase();
-console.log('Input by user should be variable', questionThree)
-if (questionThree === 'YES' || questionThree === 'Y') {
-    alert('Wow! You know me so well!')
-    result++;
-} else if (questionThree === 'NO' || questionThree === 'N') {
-    alert('Oh no! That is wrong! Better luck next time!')
-} else {
-    alert('Please answer with Yes, Y, or No, N next time.')
+function thirdQuestion(){
+	console.log('variable for questionTwo is undefined, waiting for input', questionThree)
+	var questionThree = prompt('Do I like cats? Please answer with Yes/Y/No/N.').toUpperCase();
+	console.log('Input by user should be variable', questionThree)
+	if (questionThree === 'YES' || questionThree === 'Y') {
+			alert('Wow! You know me so well!')
+			result++;
+	} else if (questionThree === 'NO' || questionThree === 'N') {
+			alert('Oh no! That is wrong! Better luck next time!')
+	} else {
+			alert('Please answer with Yes, Y, or No, N next time.')
+	}
 }
-
+thirdQuestion();
+console.log('result', result);
 
 //Question four in regards to coffee
 console.log('variable for questionTwo is undefined, waiting for input', questionFour)
