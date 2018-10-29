@@ -1,3 +1,16 @@
-html { background-color : goldenrod
-}
+html { background-color : rgb(230, 214, 175)}
+html {background-image : url("paper.gif");}
+
+
+
 h1 {font-size: 50px }
+h1 {background-color : rgba(248, 249, 252, 0.767)}
+
+h2 {font-size: 50px }
+h2 {background-color : rgba(248, 249, 252, 0.767)}
+
+h3 {font-size: 50px}
+h3 {background-color : rgba(248, 249, 252, 0.767)}
+
+h4 {font-size: 50px}
+h4 {background-color : rgba(248, 249, 252, 0.767)}
